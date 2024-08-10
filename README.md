@@ -1,1 +1,1 @@
-# RB-IRP: Robust Bio-Influenced Routing Protocol for IoT Devices
+RB-IRP: Robust Bio-Influenced Routing Protocol for IoT Devices
