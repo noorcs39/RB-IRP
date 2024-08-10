@@ -1,0 +1,22 @@
+#ifndef __RBIRP_H__
+#define __RBIRP_H__
+
+#include "inet/networklayer/ipv4/IRoutingTable.h"
+#include "inet/networklayer/ipv4/IPv4.h"
+#include "inet/networklayer/ipv4/IPv4Datagram.h"
+#include "inet/networklayer/contract/IL3AddressType.h"
+#include "inet/common/INETDefs.h"
+
+using namespace inet;
+
+class RBIRP : public cSimpleModule
+{
+  protected:
+    virtual void initialize(int stage) override;
+    virtual void handleMessage(cMessage *msg) override;
+    void forwardPacket(IPv4Datagram *datagram);
+    void updateRoutingTable();
+    // Define other member functions and variables here
+};
+
+#endif

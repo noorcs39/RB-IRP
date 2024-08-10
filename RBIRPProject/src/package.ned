@@ -1,0 +1,3 @@
+package rbirpproject;
+
+@license(LGPL);
