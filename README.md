@@ -39,9 +39,11 @@ source /path/to/omnetpp-6.0.3/setenv
 
 ##Build the project:
 Navigate to the project directory and build the simulation files.
+
 cd RBIRPProject
 make makefiles
 make
+
 
 #Running Simulations
 ##Configure the simulation parameters:
