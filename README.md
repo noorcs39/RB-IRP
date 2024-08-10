@@ -33,42 +33,53 @@ With the rapid advancement in micro-electronic technologies and the increasing i
    git clone https://github.com/yourusername/RB-IRP.git
    cd RB-IRP
 
-##Set up the environment:
-Source the OMNeT++ environment and ensure all paths are correctly set.
-source /path/to/omnetpp-6.0.3/setenv
+# RB-IRP Simulation
 
-##Build the project:
-Navigate to the project directory and build the simulation files.
+This project implements the RB-IRP protocol for network simulations using the OMNeT++ framework.
 
-cd RBIRPProject
-make makefiles
-make
+## Setup the Environment
 
+2. **Source the OMNeT++ environment**: Ensure all paths are correctly set.
+    ```bash
+    source /path/to/omnetpp-6.0.3/setenv
+    ```
 
-#Running Simulations
-##Configure the simulation parameters:
-Modify the omnetpp.ini file located in the simulations directory to configure network topology, simulation time, and other parameters.
+3. **Build the project**: Navigate to the project directory and build the simulation files.
+    ```bash
+    cd RBIRPProject
+    make makefiles
+    make
+    ```
 
-##Run the simulation:
-Start the OMNeT++ IDE and run the RB-IRP simulation.
+## Running Simulations
 
-omnetpp
+1. **Configure the simulation parameters**: Modify the `omnetpp.ini` file located in the `simulations` directory to configure network topology, simulation time, and other parameters.
 
-Alternatively, you can run the simulation from the command line:
-opp_run -u Cmdenv -f simulations/omnetpp.ini
+2. **Run the simulation**: Start the OMNeT++ IDE and run the RB-IRP simulation.
+    ```bash
+    omnetpp
+    ```
 
-#Directory Structure
-- src/: Contains the source code for the RB-IRP protocol.
-- simulations/: Includes simulation configuration files (omnetpp.ini) and network definition files.
-- results/: Generated simulation results are stored here.
-- scripts/: Python scripts for processing and visualizing simulation data.
+   Alternatively, you can run the simulation from the command line:
+    ```bash
+    opp_run -u Cmdenv -f simulations/omnetpp.ini
+    ```
+
+## Directory Structure
+
+- `src/`: Contains the source code for the RB-IRP protocol.
+- `simulations/`: Includes simulation configuration files (`omnetpp.ini`) and network definition files.
+- `results/`: Generated simulation results are stored here.
+- `scripts/`: Python scripts for processing and visualizing simulation data.
 
 ## Experimental Results
+
 RB-IRP has been evaluated against several other routing protocols in IoT environments, showing superior performance in terms of packet delivery ratio, end-to-end delay, energy consumption, and network lifetime.
 
 ## License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Contact
-For any queries or collaboration opportunities, feel free to reach out to me at noor.cs2@yahoo.com.
 
+For any queries or collaboration opportunities, feel free to reach out to me at [noor.cs2@yahoo.com](mailto:noor.cs2@yahoo.com).
